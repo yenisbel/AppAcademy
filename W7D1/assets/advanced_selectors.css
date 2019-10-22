@@ -1,0 +1,95 @@
+/* Introduction to Cascading Style Sheets */
+
+body {
+  /* If the user cannot load the Arial font, the sans-serif font is used */
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* This selector selects ALL anchor tag children of ALL list elements that
+are children of an Unordered List element */
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* This selector selects all image elements that are children (1 level deep)
+of a header element */
+header > img {
+  width: 100px;
+}
+
+/* Selects all elements with the class attribute "ingredients-list" */
+.ingredients-list {
+
+  /* The list style property is shorthand for multiple list-style properties*/
+  list-style: square inside;
+}
+
+ol {
+  list-style: upper-roman inside;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* /* Set the cursor:pointer and outline:none properties for all radio buttons, select elements, and submit buttons. */
+input[type="radio"], select, input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Style the background-color of the submit button gold using the last-child selector and give it a darkening hover effect. */
+
+input:last-child {
+  background: gold;
+}
+
+/* Color every other list element in the directions list with a light-grey background. */
+
+ol li:nth-of-type(2n) {
+  background-color: lightgrey;
+}
+
+/* Use the + operator to select the first review immediately after the Reviews header element and give it a 1px, solid,  */
+/* black, top border (Hint: the class for a submitted review will be .user_review). */
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+/* Style the radio buttons with stars! Use the stars.png file in the assets folder.  */
+/* You will need to use the WebKit extension property -webkit-appearance: none;. */
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(./stars.png);
+  vertical-align: bottom;
+}
+
+
+/* The stars will be blue when hovered and will be yellow when checked. Use the :hover  */
+/* and :checked pseudo-classes to change the background-position property of the radio buttons 
+(Hint: You want to move the background image to show a different part of the stars.png image). */ 
+input[type="radio"]:hover {
+  background-position: 30px 60px;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
