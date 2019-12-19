@@ -108,3 +108,11 @@ hr {
 input[type="search"] {
 	padding: 6px;
 }
+
+.thumbnail {
+	height: 100px;
+}
+
+.thumbnail img {
+	object-fit: cover;
+}
