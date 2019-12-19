@@ -1,0 +1,60 @@
+.byline {
+	color: $gray;
+	margin: 4px 1px;
+	font-family: $serif;
+	font-weight: 400;
+	font-size: 11px;
+}
+
+.main-story .main-story section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main-content .main-content header {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.main-story ul li {
+	list-style: initial;
+	padding-left: 15px;
+	margin: 10px 0;
+	line-height: 1.5;
+}
+
+
+.opinion .opinions-list{
+    margin-top: 10px;
+    list-style: initial;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.opinion-sign-up {
+	margin: 25px 0;
+}
+
+.comments {
+	color: $darkest-blue;
+	font-family: $sans-serif;
+	font-size: 13px;
+	vertical-align: bottom;
+}
+
+.kicker {
+    text-transform: uppercase;
+}
+
+.note {
+	size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+
