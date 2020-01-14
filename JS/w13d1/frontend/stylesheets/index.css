@@ -1,0 +1,98 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 550px;
+    height: 150px;
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Open Sans;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+    font-family: Open Sans;
+    font-weight: bold;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.tabs {
+    width: 240px;
+    height: 200px;
+}
+
+.tabHeaders {
+    width: 200px;
+    height: 30px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabHeaders > li {
+    width: 65px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: hotpink;
+}
+
+.active { 
+    font-weight: bold;
+    font-size: 100px;
+    /* border-bottom: none; */
+}
+
+.content {
+    font-weight: bold;
+    color: black;
+    height: 192px;
+    margin: 0 20px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    background-size: cover;
+}
+
