@@ -1,0 +1,37 @@
+.bombed {
+	background: black;
+}
+
+.flagged {
+	background: red;
+}
+
+.explored {
+	background: grey;
+}
+.row {
+	display: flex;
+}
+.tile {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+	background-color: lightgrey;
+	border-style: outset;
+}
+.bomb {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+	background-color: lightgrey;
+	border-style: outset;
+	color: lightgrey;
+}
+
+.explored .bomb:active {
+	background-color: red;
+}
