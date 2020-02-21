@@ -1,0 +1,15 @@
+version: "2"
+services:
+  drupal:
+    build: .
+    image: yenisbel/mycustom-drupal
+    ports:
+      - "8080:80"
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - drupal-data:/var/lib/postgresql/data
+volumes:
+  drupal-data:
